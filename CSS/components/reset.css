@@ -52,6 +52,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -59,6 +64,9 @@ picture {
   display: block;
 }
 
+ul,ol {
+  list-style: none;
+}
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -72,6 +80,7 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
@@ -81,3 +90,4 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
