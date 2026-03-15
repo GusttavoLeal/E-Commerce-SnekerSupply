@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SnekerSupply - Tênis e Sneakers de Qualidade</title>
+    <title>SnekerSupply - Elevate Your Style</title>
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/hero.css">
 </head>
+
 <body>
     <header class="header">
         <h1 class="logo">
-  <a href="/" title="SnekerSupply - Tênis e Sneakers de Qualidade">
-    <img src="images/logo/logo.svg" alt="SnekerSupply - Tênis e Sneakers de Qualidade">
-  </a>
-</h1>
-         <nav class="nav-center" aria-label="Categorias Principais">
+            <a href="/" title="SnekerSupply - Tênis e Sneakers de Qualidade">
+                <img src="images/logo/logo.svg" alt="SnekerSupply - Tênis e Sneakers de Qualidade">
+            </a>
+        </h1>
+        <nav class="nav-center" aria-label="Categorias Principais">
             <ul>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Homem</a></li>
+                <li><a href="#">Mulher</a></li>
                 <li><a href="#">Outlet</a></li>
             </ul>
         </nav>
@@ -30,15 +33,28 @@
             <ul>
                 <li><a href="#">Nossas lojas</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#"><img src="./images/icons/user.svg" alt="Perfil" style="height:24px;"></a></li>
-                <li><a href="#"><img src="./images/icons/help.svg" alt="Ajuda" style="height:24px;"></a></li>
-                <li><a href="#"><img src="./images/icons/bag.svg" alt="Sacola" style="height:24px;"></a></li>
+                <li><a href="#"><img src="./images/icons/user_icon.svg" alt="Perfil" style="height:24px;"></a></li>
+                <li><a href="#"><img src="./images/icons/help_icon.svg" alt="Ajuda" style="height:24px;"></a></li>
+                <li><a href="#"><img src="./images/icons/bag_icon.svg" alt="Sacola" style="height:24px;"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <!-- Seção Hero -->
+        <section class="hero-section">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Nova Coleção</span>
+
+                    <h1 class="hero-title">
+                        Eleve seu estilo a outro nível.
+                    </h1>
+
+                    <div class="hero-buttons">
+                        <a class="btn btn-outline" href="#">Ver Modelos</a>
+                        <a class="btn btn-filled" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="categorias">
             <!-- Seção de categorias de tênis -->
@@ -51,4 +67,5 @@
         <!-- Informações de contato e links -->
     </footer>
 </body>
+
 </html>
