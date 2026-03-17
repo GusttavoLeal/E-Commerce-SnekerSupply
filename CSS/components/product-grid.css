@@ -26,11 +26,11 @@ body {
     background-repeat: no-repeat;
     border-radius: 16px;
     overflow: hidden;
+    position: relative; /* 🔥 IMPORTANTE */
 }
 
 /* ===== BLOCOS ===== */
 
-/* LIFESTYLE (mantém mais pra baixo) */
 .top1 {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -38,7 +38,6 @@ body {
     background-position: center bottom;
 }
 
-/* PRODUTO (centralizado) */
 .top2 {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
@@ -46,7 +45,6 @@ body {
     background-position: center;
 }
 
-/* MODELO */
 .midL {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
@@ -54,7 +52,6 @@ body {
     background-position: center;
 }
 
-/* PRODUTO */
 .midR {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
@@ -62,7 +59,6 @@ body {
     background-position: center;
 }
 
-/* PRODUTO */
 .bottomL {  
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -70,7 +66,6 @@ body {
     background-position: center;
 }
 
-/* PRODUTO */
 .bottomR {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
@@ -79,10 +74,62 @@ body {
 }
 
 /* ===== EFEITO PREMIUM ===== */
+
 .grid-section > div {
     transition: transform 0.3s ease;
 }
 
 .grid-section > div:hover {
     transform: scale(1.03);
+}
+
+/* ===== TEXTO CENTRAL ===== */
+
+.top1-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+/* ===== BOTÕES PREMIUM ===== */
+
+.top1 .cta-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.top1 .btn {
+    display: inline-block;
+    padding: 12px 30px;
+
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255,0.9);
+
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.top1 .btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* FORÇA CASO TENHA CONFLITO */
+.top1 .btn-outline {
+    border: 2px solid white;
+    color: white;
 }
