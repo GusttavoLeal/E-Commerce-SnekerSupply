@@ -1,8 +1,7 @@
-.hero-section{
+.hero-section {
     background: url("https://images.unsplash.com/photo-1718777585967-5866843e0c7a?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
     background-size: cover;
     background-position: center 80%;
-
     height: 500px;
     position: relative;
 }
@@ -22,52 +21,36 @@
     text-align: center;
 }
 
-.hero-content .hero-subtitle {
+/* Título principal */
+.hero-content .hero-title {
     font-size: 1.87rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Subtítulo */
+.hero-content .hero-subtitle {
+    font-size: 1.25rem;
     margin-bottom: 40px;
     font-weight: 400;
-    
-
-    line-height: 36px;
-}
-
-.hero-buttons {
-    
-}
-
-.hero-content .hero-title {
-    font-size: 1.25rem;
-    font-weight: 400;
+    line-height: 30px;
     letter-spacing: 3px;
-
 }
 
-.btn {
-    font-size: 1rem;
-    width: 161px;
-    height: 48px;
-    border-radius: 25px;
+/* Botões */
+.hero-buttons a {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 10px 20px;
-    transition: background-color 0.3s, border-color 0.3s;
-
+    font-size: 14px;
+    margin: 5px;
+    transition: 0.3s;
 }
 
-.btn-outline {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    line-height: 23px;
-}
-
-.btn-filled {
-    background-color: #ffffff;
-    color: #ff0000;
-}
-
-.btn:hover {
-    background-color: #ff0000;
-    color: #ffffff;
-    border-color: #ff0000;
+.hero-buttons a:hover {
+    background: white;
+    color: black;
 }

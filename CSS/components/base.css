@@ -1,5 +1,44 @@
-body{
+/* ===========================
+   Base CSS Geral
+=========================== */
+body {
     font-family: var(--font-principal);
     background-color: #000000;
     color: #ffffff;
+}
+
+/* ===========================
+   Botões do Hero (isolados)
+=========================== */
+.hero-btn {
+    font-size: 1rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero-btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    line-height: 23px;
+}
+
+.hero-btn-filled {
+    background-color: #ffffff;
+    color: #ff0000;
+}
+
+.hero-btn:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-color: #ff0000;
 }
