@@ -1,0 +1,193 @@
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #2f2f2f;
+    color: #e5e5e5;
+    padding: 50px 80px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* ESQUERDA */
+.footer-left {
+    width: 280px;
+}
+
+.newsletter-title {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.newsletter-box input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #e5e5e5;
+    font-size: 12px;
+}
+
+/* INPUT FOCUS MELHORADO */
+.newsletter-box input:focus {
+    box-shadow: 0 0 0 2px #ffffff;
+}
+
+.social-title {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #cfcfcf;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5e5e5;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* =========================
+   REDES SOCIAIS (OFICIAL)
+========================= */
+
+/* INSTAGRAM (GRADIENTE REAL) */
+.social-icons a.instagram {
+    background: linear-gradient(
+        45deg,
+        #f58529,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+    color: #fff;
+    border: none;
+}
+
+/* WHATSAPP */
+.social-icons a.whatsapp {
+    color: #25D366;
+    border-color: #25D366;
+}
+
+/* TIKTOK */
+.social-icons a.tiktok {
+    color: #000;
+    border-color: #fff;
+}
+
+/* FACEBOOK */
+.social-icons a.facebook {
+    color: #1877F2;
+    border-color: #1877F2;
+}
+
+/* =========================
+   HOVER PROFISSIONAL
+========================= */
+
+.social-icons a.instagram:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.social-icons a.whatsapp:hover {
+    background: #25D366;
+    color: #fff;
+}
+
+.social-icons a.tiktok:hover {
+    background: #fff;
+    color: #000;
+}
+
+.social-icons a.facebook:hover {
+    background: #1877F2;
+    color: #fff;
+}
+
+/* COLUNAS */
+.footer-columns {
+    display: flex;
+    gap: 60px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.col p {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.col a {
+    font-size: 12px;
+    color: #bfbfbf;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: 0.2s;
+}
+
+/* HOVER PREMIUM */
+.col a:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+/* LINHA + COPYRIGHT */
+.footer-bottom {
+    border-top: 1px solid #555;
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #a0a0a0;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .footer-columns {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
