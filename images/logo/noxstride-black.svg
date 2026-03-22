@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220">
+  <g fill="black">
+    <path d="M120 150 L120 70 L150 70 L190 130 L190 70 L220 70 L220 150 L190 150 L150 90 L150 150 Z"/>
+    <path d="M240 110 
+             C240 80 260 65 290 65 
+             C320 65 340 80 340 110 
+             C340 140 320 155 290 155 
+             C260 155 240 140 240 110 Z"/>
+    <path d="M360 70 L395 110 L360 150 L390 150 L420 120 L450 150 L480 150 L445 110 L480 70 L450 70 L420 100 L390 70 Z"/>
+
+    <text x="500" y="140"
+          font-family="Arial Black, Arial, sans-serif"
+          font-size="90"
+          font-style="italic"
+          letter-spacing="2">
+      Stride
+    </text>
+  </g>
+
+  <path d="M200 170 Q450 230 780 160"
+        stroke="black"
+        stroke-width="8"
+        fill="none"/>
+
+  <path d="M200 180 Q450 240 780 170"
+        stroke="black"
+        stroke-width="2"
+        fill="none"
+        opacity="0.5"/>
+</svg>
