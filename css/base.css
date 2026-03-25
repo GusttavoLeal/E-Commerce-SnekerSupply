@@ -7,15 +7,12 @@ body {
     color: #ffffff;
 }
 
-/* RESPONSIVO (corrigido) */
-@media (max-width:1280px) {
-    main {
-        padding: 0.635rem;
-    }
+@media (max-width:1280px)
+main {
+    padding: 0.635rem;
 }
-
 /* ===========================
-   Botões do Hero (corrigido)
+   Botões do Hero (isolados)
 =========================== */
 .hero-btn {
     font-size: 1rem;
@@ -23,31 +20,27 @@ body {
     height: 48px;
     border-radius: 25px;
     text-decoration: none;
+    color: #ffffff;
     font-weight: 400;
     padding: 10px 20px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s, border-color 0.3s;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
-    /* 🔥 base igual pra todos */
-    border: 2px solid #ffffff;
 }
 
-/* Botão Outline (igual ao View Products) */
 .hero-btn-outline {
     background-color: transparent;
-    color: #ffffff;
+    border: 2px solid #ffffff;
+    line-height: 23px;
 }
 
-/* Botão Filled (agora alinhado corretamente) */
 .hero-btn-filled {
     background-color: #ffffff;
-    color: #000000;
+    color: #ff0000;
 }
 
-/* Hover padrão */
 .hero-btn:hover {
     background-color: #ff0000;
     color: #ffffff;
