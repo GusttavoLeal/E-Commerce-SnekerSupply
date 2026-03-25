@@ -84,7 +84,7 @@ body {
 .midR {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    background-image: url('../images/grid/grid2.jpg');
+    background-image: url('../images/grid/grid14.png');
 }
 
 .bottomL {
@@ -96,7 +96,7 @@ body {
 .bottomR {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-    background-image: url('../images/grid/grid1.jpg');
+    background-image: url('../images/grid/grid15.png');
 }
 
 /* ===== CONTEÚDO ===== */
