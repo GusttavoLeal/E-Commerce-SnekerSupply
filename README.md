@@ -1,21 +1,21 @@
 # NoxStride — E-Commerce Website
 
-Projeto front-end de um e-commerce de sneakers e moda esportiva, com foco em design moderno, organização visual e responsividade.
+Front-end project for a sneakers and sportswear e-commerce, focused on modern design, visual organization, and responsiveness.
 
-## Sobre o projeto
+## About the Project
 
-O NoxStride é um projeto fictício desenvolvido para simular um ambiente real de e-commerce. A aplicação apresenta produtos de forma estruturada, com navegação simples e layout pensado para diferentes tamanhos de tela.
+NoxStride is a fictional project developed to simulate a real e-commerce environment. The application presents products in a structured way, with simple navigation and a layout designed for different screen sizes.
 
-## Funcionalidades
+## Features
 
-* Página inicial com banner e seções de destaque
-* Grid de produtos organizado
-* Menu de navegação (Men, Women, Outlet, Our Stores, About)
-* Página de produtos
-* Footer com informações e redes sociais
-* Layout responsivo
+* Home page with banner and highlight sections
+* Organized product grid
+* Navigation menu (Men, Women, Outlet, Our Stores, About)
+* Product page
+* Footer with information and social media
+* Responsive layout
 
-## Estrutura do projeto
+## Project Structure
 
 ```
 E-Commerce-NoxStride/
@@ -44,17 +44,17 @@ E-Commerce-NoxStride/
 │   └── products/
 ```
 
-## Tecnologias utilizadas
+## Technologies Used
 
 * HTML5
 * CSS3
 * Font Awesome
 * Google Fonts
 
-## Como executar
+## How to Run
 
-Clone o repositório e abra o arquivo `index.html` em seu navegador.
+Clone the repository and open the `index.html` file in your browser.
 
-## Autor
+## Author
 
 Gustavo Leal Mamedio
