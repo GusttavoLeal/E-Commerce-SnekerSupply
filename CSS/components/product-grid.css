@@ -7,26 +7,58 @@
 
 body {
     background: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
-/* GRID PRINCIPAL */
+/* GRID */
 .grid-section {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 220px);
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* PADRÃO PARA TODOS OS CARDS */
+/* CARD BASE */
 .grid-section > div {
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 16px;
+    position: relative;
+    border-radius: 18px;
     overflow: hidden;
-    position: relative; /* 🔥 IMPORTANTE */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* 🔥 OVERLAY ESCURO AUTOMÁTICO */
+.grid-section > div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.1)
+    );
+    z-index: 1;
+    transition: 0.4s;
+}
+
+/* HOVER PREMIUM */
+.grid-section > div:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.grid-section > div:hover::before {
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.2)
+    );
 }
 
 /* ===== BLOCOS ===== */
@@ -35,101 +67,116 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-image: url(../../images/grid/grid6.png);
-    background-position: center bottom;
 }
 
 .top2 {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     background-image: url(../../images/grid/grid9.png);
-    background-position: center;
 }
 
 .midL {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
     background-image: url(../../images/grid/grid7.png);
-    background-position: center;
 }
 
 .midR {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     background-image: url(../../images/grid/grid2.jpg);
-    background-position: center;
 }
 
-.bottomL {  
+.bottomL {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     background-image: url(../../images/grid/grid8.png);
-    background-position: center;
 }
 
 .bottomR {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     background-image: url(../../images/grid/grid1.jpg);
-    background-position: center;
 }
 
-/* ===== EFEITO PREMIUM ===== */
-
-.grid-section > div {
-    transition: transform 0.3s ease;
-}
-
-.grid-section > div:hover {
-    transform: scale(1.03);
-}
-
-/* ===== TEXTO CENTRAL ===== */
+/* ===== CONTEÚDO ===== */
 
 .top1-content {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+    bottom: 30px;
+    left: 30px;
     z-index: 2;
+    color: white;
+}
+
+/* TEXTO */
+.top1-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.top1-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 /* ===== BOTÕES PREMIUM ===== */
 
-.top1 .cta-group {
+.cta-group {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-.top1 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-
-    border-radius: 50px;
-    border: 2px solid rgba(255,255,255,0.9);
-
+.btn {
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,0.7);
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-size: 0.9rem;
 
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
 
     transition: all 0.3s ease;
 }
 
-/* HOVER */
-.top1 .btn:hover {
+/* BOTÃO PRINCIPAL */
+.btn.primary {
     background: white;
     color: black;
-    transform: scale(1.05);
+    border: none;
 }
 
-/* FORÇA CASO TENHA CONFLITO */
-.top1 .btn-outline {
-    border: 2px solid white;
-    color: white;
+/* HOVER */
+.btn:hover {
+    transform: translateY(-2px);
+    background: white;
+    color: black;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .grid-section > div {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        min-height: 200px;
+    }
+
+    .top1 {
+        min-height: 420px;
+    }
+
+    .top1-content {
+        bottom: 20px;
+        left: 20px;
+    }
 }

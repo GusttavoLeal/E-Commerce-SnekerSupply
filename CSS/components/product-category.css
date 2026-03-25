@@ -123,3 +123,9 @@
 .futurista {
     background-image: url('../../images/products/upfuturista.png');
 }
+
+@media (max-width: 500px) {
+    .category-card {
+        width: 100%;
+    }
+}
