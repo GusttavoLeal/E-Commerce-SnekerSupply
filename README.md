@@ -1,68 +1,131 @@
-# E-Commerce NoxStride
+# 🛒 NoxStride — E-Commerce Website
 
-Projeto de site para e-commerce de sneakers, tênis e moda esportiva, com foco em visual moderno, responsivo e navegação intuitiva.
+Aplicação web front-end de um e-commerce de sneakers e moda esportiva, com foco em **design moderno**, **experiência do usuário (UX)** e **responsividade**.
 
-## ✨ Visão Geral
-O NoxStride é um site fictício de e-commerce para venda de tênis e sneakers, inspirado em grandes marcas do segmento. O objetivo é apresentar produtos de forma atraente, com categorias, grid de destaques e navegação amigável.
+---
+
+## 📌 Sobre o Projeto
+
+O **NoxStride** é um projeto fictício desenvolvido com o objetivo de simular um e-commerce real, inspirado em grandes marcas do segmento de streetwear.
+
+A aplicação prioriza a apresentação visual dos produtos, organização por categorias e uma navegação fluida, proporcionando uma experiência próxima a plataformas profissionais.
+
+---
+
+## 🎯 Objetivo
+
+* Praticar desenvolvimento front-end com HTML e CSS
+* Criar um layout moderno e responsivo
+* Simular um projeto real para portfólio profissional
+* Demonstrar organização de código e boas práticas
+
+---
 
 ## 🚀 Funcionalidades
-- Página inicial com banner, categorias e grid de produtos
-- Menu de navegação para Men, Women, Outlet, Our Stores e About
-- Página de modelos (produtos)
-- Footer com newsletter e redes sociais
-- Layout responsivo e visual moderno
 
-## 🗂️ Estrutura de Pastas
+* ✔️ Página inicial com destaque visual (hero section)
+* ✔️ Grid de produtos organizado e responsivo
+* ✔️ Navegação entre categorias (*Men, Women, Outlet, Stores, About*)
+* ✔️ Página dedicada para exibição de produtos
+* ✔️ Footer com newsletter e redes sociais
+* ✔️ Layout adaptado para diferentes dispositivos
+
+---
+
+## 🧱 Arquitetura do Projeto
+
+Estrutura organizada com foco em escalabilidade e reutilização de componentes:
+
 ```
 E-Commerce-NoxStride/
 │
-├── index.html                # Página principal
-├── modelos.html              # Página de modelos/produtos
-├── README.md                 # Este arquivo
+├── index.html
+├── modelos.html
+├── README.md
 │
-├── CSS/
-│   └── components/           # Componentes CSS reutilizáveis
+├── css/
+│   └── components/
 │       ├── base.css
-│       ├── footer.css
+│       ├── reset.css
+│       ├── variables.css
 │       ├── header.css
 │       ├── hero.css
 │       ├── product-category.css
 │       ├── product-grid.css
-│       ├── reset.css
-│       └── variables.css
+│       └── footer.css
 │
 ├── images/
-│   ├── assets/               # Ícones e imagens auxiliares
-│   ├── banners/              # Banners e imagens de destaque
-│   ├── grid/                 # Imagens do grid de produtos
-│   ├── icons/                # Ícones SVG
-│   ├── logo/                 # Logos do projeto
-│   └── products/             # Imagens de produtos
-│
-└── ...
+│   ├── assets/
+│   ├── banners/
+│   ├── grid/
+│   ├── icons/
+│   ├── logo/
+│   └── products/
 ```
-
-## 🖥️ Tecnologias Utilizadas
-- HTML5
-- CSS3 (com organização modular por componentes)
-- Font Awesome (ícones)
-- Google Fonts (Ubuntu)
-
-## 📦 Como Executar
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` em seu navegador.
-3. Navegue pelas páginas e explore as categorias e produtos.
-
-> Não há dependências externas de build ou backend. O projeto é totalmente estático.
-
-## 📸 Créditos de Imagens
-- Imagens de produtos e banners: Unsplash, Freepik ou placeholders.
-- Ícones: Font Awesome, SVGs próprios.
-
-## 👤 Autor
-- Projeto desenvolvido por [Gustavo Leal Mamedio].
 
 ---
 
-Sinta-se livre para customizar, expandir e utilizar este template para seus próprios projetos!
+## 🖥️ Tecnologias Utilizadas
 
+* **HTML5**
+* **CSS3**
+* **CSS Modular (Component-Based Architecture)**
+* **Font Awesome**
+* **Google Fonts (Ubuntu)**
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/E-Commerce-NoxStride.git
+
+# Acesse a pasta
+cd E-Commerce-NoxStride
+
+# Abra no navegador
+index.html
+```
+
+> Projeto 100% estático — não requer instalação de dependências.
+
+---
+
+## 📸 Preview
+
+*(Adicione aqui prints do seu projeto depois — isso aumenta MUITO o impacto no portfólio)*
+
+---
+
+## 🌐 Deploy
+
+*(Adicione o link do GitHub Pages aqui quando publicar)*
+
+---
+
+## 📦 Melhorias Futuras
+
+* Integração com API de produtos
+* Carrinho de compras
+* Sistema de filtros
+* Página de produto detalhado
+* Autenticação de usuário
+
+---
+
+## 📄 Licença
+
+Este projeto é apenas para fins educacionais e de portfólio.
+
+---
+
+## 👨‍💻 Autor
+
+**Gustavo Leal Mamedio**
+
+---
+
+## ⭐ Destaque
+
+Se este projeto te ajudou ou você gostou, considere dar uma estrela no repositório ⭐
