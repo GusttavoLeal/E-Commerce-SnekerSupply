@@ -24,8 +24,8 @@ E-Commerce-NoxStride/
 ├── modelos.html
 ├── README.md
 │
-├── css/
-│   └── components/
+├── css
+│   └── 
 │       ├── base.css
 │       ├── reset.css
 │       ├── variables.css
