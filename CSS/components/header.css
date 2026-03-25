@@ -6,14 +6,16 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 1260px;
     border-radius: 15px;
     z-index: 999;
+
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 0 20px;
+    justify-content: space-between;
+
+    padding: 10px 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
@@ -32,8 +34,8 @@
 .nav-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
+    width: 100%;
 }
 
 /* NAV CENTER */
@@ -41,8 +43,6 @@
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 /* NAV RIGHT */
@@ -50,8 +50,6 @@
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    padding: 0;
-    margin: 0;
     align-items: center;
 }
 
@@ -59,8 +57,7 @@
 .nav-center a,
 .nav-right a {
     text-decoration: none;
-    color: #333333;
-    display: block;
+    color: #333;
     transition: color 0.3s ease;
 }
 
@@ -69,6 +66,7 @@
     color: darkgrey;
 }
 
+/* ÍCONES */
 .nav-right img.icon {
     height: 20px;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -87,22 +85,17 @@
 
 .menu-icon {
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 28px;
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 1001;
-}
-
-.menu-icon:hover {
-    opacity: 0.7;
-    transform: rotate(15deg);
 }
 
 /* =========================
    RESPONSIVO MOBILE
 ========================= */
 @media (max-width: 768px) {
+
+    /* MOSTRA BOTÃO */
     .menu-icon {
         display: block;
     }
@@ -111,48 +104,29 @@
     .nav-container {
         position: fixed;
         top: 0;
-        right: -300px;
-        width: 250px;
+        right: -100%;
+        width: 260px;
         height: 100vh;
+
         flex-direction: column;
-        padding: 80px 20px 20px;
-        background-color: #ffffff;
-        gap: 2rem;
-        transition: right 0.4s cubic-bezier(0.77,0,0.175,1);
         align-items: flex-start;
-        z-index: 1000;
+
+        padding: 80px 20px 20px;
+        gap: 2rem;
+
+        background-color: #ffffff;
         box-shadow: -2px 0 12px rgba(0,0,0,0.1);
+
+        transition: right 0.4s ease;
+        z-index: 1000;
     }
 
-    /* LINKS DO MENU MOBILE */
-    .nav-center, .nav-right {
-        width: 100%;
-        text-align: left;
-    }
-
-    .nav-center ul, .nav-right ul {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .nav-center a, .nav-right a {
-        width: 100%;
-        border-bottom: 1px solid #eeeeee;
-        padding: 0.5rem 0;
-        font-size: 1rem;
-        transition: background 0.3s ease;
-    }
-
-    .nav-center a:hover, .nav-right a:hover {
-        background-color: #f9f9f9;
-    }
-
-    /* ABRE MENU QUANDO CHECKBOX ATIVO */
+    /* ABRE MENU */
     .menu-toggle:checked ~ .nav-container {
         right: 0;
     }
 
-    /* OVERLAY ATRÁS DO MENU */
+    /* OVERLAY */
     .nav-container::before {
         content: "";
         position: fixed;
@@ -163,8 +137,7 @@
         background: rgba(0,0,0,0.4);
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.4s ease;
-        z-index: 999;
+        transition: opacity 0.3s ease;
     }
 
     .menu-toggle:checked ~ .nav-container::before {
@@ -172,14 +145,31 @@
         pointer-events: auto;
     }
 
-    /* ÍCONES giram ao abrir menu */
-    .menu-toggle:checked ~ .nav-container .nav-right img.icon {
-        transform: rotate(15deg);
+    /* LISTAS VERTICAIS */
+    .nav-center,
+    .nav-right {
+        width: 100%;
+    }
+
+    .nav-center ul,
+    .nav-right ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+    /* LINKS MOBILE */
+    .nav-center a,
+    .nav-right a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
     }
 }
 
 /* =========================
-   RESPONSIVO DESKTOP
+   AJUSTE NOTEBOOK
 ========================= */
 @media (max-width: 1280px) {
     .header {

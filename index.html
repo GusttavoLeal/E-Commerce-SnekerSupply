@@ -12,6 +12,7 @@
         content="Descubra a moda esportiva de alta qualidade na NoxStride. Tênis e Sneakers para todos os estilos."
     />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/base.css" />
@@ -20,8 +21,6 @@
     <link rel="stylesheet" href="./css/components/hero.css" />
     <link rel="stylesheet" href="./css/components/product-category.css" />
     <link rel="stylesheet" href="./css/components/product-grid.css" />
-    
-    <!-- FOOTER CSS -->
     <link rel="stylesheet" href="./css/components/footer.css" />
 
     <!-- Ícones -->
@@ -30,19 +29,20 @@
 
 <body>
 
-    <header class="header">
+<!-- =========================
+     HEADER
+========================= -->
+<header class="header">
+
     <!-- LOGO -->
     <h1 class="logo">
-        <a href="/" title="NoxStride -">
-            <img src="images/logo/noxstride-black.svg" alt="NoxStride - Premium Sneakers" />
+        <a href="/">
+            <img src="images/logo/noxstride-black.svg" alt="NoxStride">
         </a>
     </h1>
 
-    <!-- TOGGLE MENU MOBILE -->
+    <!-- CHECKBOX (CONTROLE DO MENU) -->
     <input type="checkbox" class="menu-toggle" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-        <img src="./images/icons/icon.svg" alt="Menu">
-    </label>
 
     <!-- MENU -->
     <nav class="nav-container">
@@ -64,146 +64,156 @@
             </ul>
         </div>
     </nav>
+
+    <!-- BOTÃO MENU (FICA POR ÚLTIMO) -->
+    <label for="menu-toggle" class="menu-icon">
+        <img src="./images/icons/icon.svg" alt="Menu">
+    </label>
+
 </header>
 
-    <!-- MAIN -->
-    <main>
+<!-- =========================
+     MAIN
+========================= -->
+<main>
 
-        <!-- HERO -->
-        <section class="hero-section">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <span class="hero-subtitle">Own the night. Walk with power.</span>
+    <!-- HERO -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="hero-subtitle">Own the night. Walk with power.</span>
 
-                    <h1 class="hero-title">Born in darkness. Built to conquer.</h1>
+                <h1 class="hero-title">Born in darkness. Built to conquer.</h1>
 
-                    <div class="hero-buttons">
-                        <a class="hero-btn hero-btn-outline" href="modelos.html">View Products</a>
-                        <a class="hero-btn hero-btn-filled" href="#">Shop Now</a>
-                    </div>
+                <div class="hero-buttons">
+                    <a class="hero-btn hero-btn-outline" href="modelos.html">View Products</a>
+                    <a class="hero-btn hero-btn-filled" href="#">Shop Now</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CATEGORIAS -->
-        <section class="categories-section">
+    <!-- CATEGORIAS -->
+    <section class="categories-section">
 
-            <div class="category-card casual">
-                <a href="#" class="category-link">
-                    <span class="overlay"></span>
-                    <span class="category-name">Casual</span>
-                </a>
-            </div>
+        <div class="category-card casual">
+            <a href="#" class="category-link">
+                <span class="overlay"></span>
+                <span class="category-name">Casual</span>
+            </a>
+        </div>
 
-            <div class="category-card esporte">
-                <a href="#" class="category-link">
-                    <span class="overlay"></span>
-                    <span class="category-name">Athletic</span>
-                </a>
-            </div>
+        <div class="category-card esporte">
+            <a href="#" class="category-link">
+                <span class="overlay"></span>
+                <span class="category-name">Athletic</span>
+            </a>
+        </div>
 
-            <div class="category-card moderno">
-                <a href="#" class="category-link">
-                    <span class="overlay"></span>
-                    <span class="category-name">Modern</span>
-                </a>
-            </div>
+        <div class="category-card moderno">
+            <a href="#" class="category-link">
+                <span class="overlay"></span>
+                <span class="category-name">Modern</span>
+            </a>
+        </div>
 
-            <div class="category-card futurista">
-                <a href="#" class="category-link">
-                    <span class="overlay"></span>
-                    <span class="category-name">Futuristic</span>
-                </a>
-            </div>
+        <div class="category-card futurista">
+            <a href="#" class="category-link">
+                <span class="overlay"></span>
+                <span class="category-name">Futuristic</span>
+            </a>
+        </div>
 
-        </section>
+    </section>
 
-        <!-- GRID -->
-        <section class="grid-section"> 
+    <!-- GRID -->
+    <section class="grid-section"> 
 
-            <div class="card top1">
-                <div class="top1-content">
-                    <h3 class="card-title">Latest Drop</h3>
-                    <p class="card-subtitle">Control the streets. Define your path.</p>
-                    <div class="cta-group">
-                        <a href="#" class="btn btn-outline">Men</a>
-                        <a href="#" class="btn btn-outline">Women</a>
-                    </div>
+        <div class="card top1">
+            <div class="top1-content">
+                <h3 class="card-title">Latest Drop</h3>
+                <p class="card-subtitle">Control the streets. Define your path.</p>
+                <div class="cta-group">
+                    <a href="#" class="btn btn-outline">Men</a>
+                    <a href="#" class="btn btn-outline">Women</a>
                 </div>
-            </div>
-
-            <div class="card top2"></div>
-            <div class="card midL"></div>
-            <div class="card midR"></div>
-            <div class="card bottomL"></div>
-            <div class="card bottomR"></div>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-wrapper">
-
-            <div class="footer-left">
-                <p class="newsletter-title">Subscribe to our newsletter</p>
-                <div class="newsletter-box">
-                    <input type="email" placeholder="email">
-                </div>
-
-                <p class="social-title">Social Media</p>
-                <div class="social-icons">
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-columns">
-
-                <div class="col">
-                    <p>Men</p>
-                    <a href="#">Casual</a>
-                    <a href="#">Athletic</a>
-                    <a href="#">Modern</a>
-                    <a href="#">Futuristic</a>
-                </div>
-
-                <div class="col">
-                    <p>Women</p>
-                    <a href="#">Casual</a>
-                    <a href="#">Athletic</a>
-                    <a href="#">Modern</a>
-                    <a href="#">Futuristic</a>
-                </div>
-
-                <div class="col">
-                    <p>Outlet</p>
-                    <a href="#">Men</a>
-                    <a href="#">Women</a>
-                </div>
-
-                <div class="col">
-                    <p>Our Stores</p>
-                    <a href="#">Physical Store</a>
-                    <a href="#">Online Store</a>
-                </div>
-
-                <div class="col">
-                    <p>About</p>
-                    <a href="#">Who We Are</a>
-                    <a href="#">Our Mission</a>
-                </div>
-
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>Copyright. All Rights Reserved</p>
+        <div class="card top2"></div>
+        <div class="card midL"></div>
+        <div class="card midR"></div>
+        <div class="card bottomL"></div>
+        <div class="card bottomR"></div>
+
+    </section>
+
+</main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="footer">
+    <div class="footer-wrapper">
+
+        <div class="footer-left">
+            <p class="newsletter-title">Subscribe to our newsletter</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="email">
+            </div>
+
+            <p class="social-title">Social Media</p>
+            <div class="social-icons">
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
         </div>
-    </footer>
+
+        <div class="footer-columns">
+
+            <div class="col">
+                <p>Men</p>
+                <a href="#">Casual</a>
+                <a href="#">Athletic</a>
+                <a href="#">Modern</a>
+                <a href="#">Futuristic</a>
+            </div>
+
+            <div class="col">
+                <p>Women</p>
+                <a href="#">Casual</a>
+                <a href="#">Athletic</a>
+                <a href="#">Modern</a>
+                <a href="#">Futuristic</a>
+            </div>
+
+            <div class="col">
+                <p>Outlet</p>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+            </div>
+
+            <div class="col">
+                <p>Our Stores</p>
+                <a href="#">Physical Store</a>
+                <a href="#">Online Store</a>
+            </div>
+
+            <div class="col">
+                <p>About</p>
+                <a href="#">Who We Are</a>
+                <a href="#">Our Mission</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright. All Rights Reserved</p>
+    </div>
+</footer>
 
 </body>
 </html>
