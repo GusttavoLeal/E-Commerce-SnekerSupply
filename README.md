@@ -24,16 +24,16 @@ E-Commerce-NoxStride/
 ├── modelos.html
 ├── README.md
 │
-├── css/
-│   └── components/
-│       ├── base.css
-│       ├── reset.css
-│       ├── variables.css
-│       ├── header.css
-│       ├── hero.css
-│       ├── product-category.css
-│       ├── product-grid.css
-│       └── footer.css
+├── css
+│      └──├── base.css
+│         ├── reset.css
+│         ├── variables.css
+│         ├── header.css
+│         ├── hero.css
+│         ├── product-category.css
+│         ├── product-grid.css
+│         └── footer.css
+│     
 │
 ├── images/
 │   ├── assets/
