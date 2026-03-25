@@ -1,68 +1,60 @@
-# E-Commerce NoxStride
+# NoxStride — E-Commerce Website
 
-Projeto de site para e-commerce de sneakers, tênis e moda esportiva, com foco em visual moderno, responsivo e navegação intuitiva.
+Projeto front-end de um e-commerce de sneakers e moda esportiva, com foco em design moderno, organização visual e responsividade.
 
-## ✨ Visão Geral
-O NoxStride é um site fictício de e-commerce para venda de tênis e sneakers, inspirado em grandes marcas do segmento. O objetivo é apresentar produtos de forma atraente, com categorias, grid de destaques e navegação amigável.
+## Sobre o projeto
 
-## 🚀 Funcionalidades
-- Página inicial com banner, categorias e grid de produtos
-- Menu de navegação para Men, Women, Outlet, Our Stores e About
-- Página de modelos (produtos)
-- Footer com newsletter e redes sociais
-- Layout responsivo e visual moderno
+O NoxStride é um projeto fictício desenvolvido para simular um ambiente real de e-commerce. A aplicação apresenta produtos de forma estruturada, com navegação simples e layout pensado para diferentes tamanhos de tela.
 
-## 🗂️ Estrutura de Pastas
+## Funcionalidades
+
+* Página inicial com banner e seções de destaque
+* Grid de produtos organizado
+* Menu de navegação (Men, Women, Outlet, Our Stores, About)
+* Página de produtos
+* Footer com informações e redes sociais
+* Layout responsivo
+
+## Estrutura do projeto
+
 ```
 E-Commerce-NoxStride/
 │
-├── index.html                # Página principal
-├── modelos.html              # Página de modelos/produtos
-├── README.md                 # Este arquivo
+├── index.html
+├── modelos.html
+├── README.md
 │
-├── CSS/
-│   └── components/           # Componentes CSS reutilizáveis
+├── css/
+│   └── components/
 │       ├── base.css
-│       ├── footer.css
+│       ├── reset.css
+│       ├── variables.css
 │       ├── header.css
 │       ├── hero.css
 │       ├── product-category.css
 │       ├── product-grid.css
-│       ├── reset.css
-│       └── variables.css
+│       └── footer.css
 │
 ├── images/
-│   ├── assets/               # Ícones e imagens auxiliares
-│   ├── banners/              # Banners e imagens de destaque
-│   ├── grid/                 # Imagens do grid de produtos
-│   ├── icons/                # Ícones SVG
-│   ├── logo/                 # Logos do projeto
-│   └── products/             # Imagens de produtos
-│
-└── ...
+│   ├── assets/
+│   ├── banners/
+│   ├── grid/
+│   ├── icons/
+│   ├── logo/
+│   └── products/
 ```
 
-## 🖥️ Tecnologias Utilizadas
-- HTML5
-- CSS3 (com organização modular por componentes)
-- Font Awesome (ícones)
-- Google Fonts (Ubuntu)
+## Tecnologias utilizadas
 
-## 📦 Como Executar
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` em seu navegador.
-3. Navegue pelas páginas e explore as categorias e produtos.
+* HTML5
+* CSS3
+* Font Awesome
+* Google Fonts
 
-> Não há dependências externas de build ou backend. O projeto é totalmente estático.
+## Como executar
 
-## 📸 Créditos de Imagens
-- Imagens de produtos e banners: Unsplash, Freepik ou placeholders.
-- Ícones: Font Awesome, SVGs próprios.
+Clone o repositório e abra o arquivo `index.html` em seu navegador.
 
-## 👤 Autor
-- Projeto desenvolvido por [Gustavo Leal Mamedio].
+## Autor
 
----
-
-Sinta-se livre para customizar, expandir e utilizar este template para seus próprios projetos!
-
+Gustavo Leal Mamedio
