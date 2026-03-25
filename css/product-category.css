@@ -106,22 +106,22 @@
     color: inherit;
 }
 
-/* categorias */
+/* categorias (CORRIGIDO AQUI 🔥) */
 
 .casual {
-    background-image: url('../../images/products/upcasual.png');
+    background-image: url('../images/products/upcasual.png');
 }
 
 .esporte {
-    background-image: url('../../images/products/upesporte.png');
+    background-image: url('../images/products/upesporte.png');
 }
 
 .moderno {
-    background-image: url('../../images/products/upmoderno.png');
+    background-image: url('../images/products/upmoderno.png');
 }
 
 .futurista {
-    background-image: url('../../images/products/upfuturista.png');
+    background-image: url('../images/products/upfuturista.png');
 }
 
 @media (max-width: 500px) {
