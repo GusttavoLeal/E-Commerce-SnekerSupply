@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.vitrine {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Para quebrar linha no celular */
+}
+
+.card {
+    background: white;
+    width: 320px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    position: relative;
+    background-color: #f6f6f6;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 90%;
+    mix-blend-mode: multiply; /* Ajuda a remover fundos brancos de imagens JPG */
+}
+
+.wishlist {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.categoria {
+    font-size: 14px;
+    color: #707072;
+    margin-bottom: 15px;
+}
+
+.preco-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.preco-pix {
+    font-weight: bold;
+    font-size: 16px;
+    color: #111;
+}
+
+.preco-antigo {
+    font-size: 14px;
+    color: #707072;
+    text-decoration: line-through;
+}
+
+.desconto {
+    display: block;
+    color: #007d32;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #111;
+}
+
+.rating span {
+    color: #707072;
+    margin-left: 5px;
+}
