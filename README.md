@@ -50,7 +50,6 @@ E-Commerce-NoxStride/
 * CSS3
 * Font Awesome
 * Google Fonts
-  
-## Author
 
+## Developer
 Gustavo Leal Mamedio
