@@ -50,11 +50,7 @@ E-Commerce-NoxStride/
 * CSS3
 * Font Awesome
 * Google Fonts
-
-## How to Run
-
-Clone the repository and open the `index.html` file in your browser.
-
+  
 ## Author
 
 Gustavo Leal Mamedio
