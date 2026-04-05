@@ -44,17 +44,5 @@ E-Commerce-NoxStride/
 │   └── products/
 ```
 
-## Technologies Used
-
-* HTML5
-* CSS3
-* Font Awesome
-* Google Fonts
-
-## How to Run
-
-Clone the repository and open the `index.html` file in your browser.
-
-## Author
-
+# Developer
 Gustavo Leal Mamedio
