@@ -172,32 +172,68 @@
     margin: 0;
 }
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
-@media (max-width: 768px) {
-    .footer {
-        padding: 40px 20px;
-    }
+.footer {
+    padding: 30px 60px 10px; /* ↓ diminui altura geral */
+}
 
-    .footer-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
+/* WRAPPER */
+.footer-wrapper {
+    gap: 25px; /* ↓ menos espaço entre blocos */
+}
 
-    .footer-left {
-        width: 100%;
-        text-align: center;
-    }
+/* ESQUERDA */
+.footer-left {
+    width: 240px; /* ↓ um pouco menor */
+}
 
-    .social-icons {
-        justify-content: center;
-    }
+.newsletter-title {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
 
-    .footer-columns {
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-        text-align: center;
-    }
+.newsletter-box input {
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+/* SOCIAL */
+.social-title {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.social-icons {
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+}
+
+/* COLUNAS */
+.footer-columns {
+    gap: 40px; /* ↓ menos espaço horizontal */
+}
+
+.col p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.col a {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    margin-top: 25px;
+    padding: 15px 0;
+}
+
+.footer-bottom p {
+    font-size: 10px;
 }

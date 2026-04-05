@@ -124,8 +124,68 @@
     background-image: url('../images/products/upfuturista.png');
 }
 
-@media (max-width: 500px) {
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* TABLET GRANDE */
+@media (max-width: 1200px) {
+    .categories-section {
+        flex-wrap: wrap; /* quebra corretamente */
+        gap: 25px;
+        padding: 30px;
+    }
+
     .category-card {
-        width: 100%;
+        width: 45%; /* 2 por linha */
+        height: 420px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .categories-section {
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .category-card {
+        width: 100%; /* 1 por linha */
+        height: 380px;
+    }
+
+    .category-name {
+        font-size: 0.9rem;
+        padding: 10px 22px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .categories-section {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .category-card {
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .category-name {
+        font-size: 0.85rem;
+        padding: 9px 18px;
+    }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 360px) {
+    .category-card {
+        height: 280px;
+    }
+
+    .category-name {
+        font-size: 0.8rem;
+        padding: 8px 16px;
     }
 }
