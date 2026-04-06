@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoxStride Store</title>
+
+    <link rel="icon" type="image/png" href="../images/assets/noxstride.png" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">NoxStride</h1>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Buscar produto...">
+        
+        <select id="filter">
+            <option value="all">Todos</option>
+            <option value="0-300">Até R$300</option>
+            <option value="300-600">R$300 - R$600</option>
+            <option value="600">Acima de R$600</option>
+        </select>
+    </div>
+
+    <div class="cart-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cart-count">0</span>
+    </div>
+</header>
+
+<main>
+    <section class="vitrine" id="vitrine"></section>
+</main>
+
+<aside class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+        <h2>Carrinho</h2>
+        <button id="close-cart">×</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+        <h3>Total: R$ <span id="cart-total">0.00</span></h3>
+        <button class="checkout">Finalizar Compra</button>
+    </div>
+
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>
