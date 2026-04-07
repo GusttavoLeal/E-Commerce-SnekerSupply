@@ -1,48 +1,71 @@
-# NoxStride — E-Commerce Website
+# NoxStride E-commerce
 
-Front-end project for a sneakers and sportswear e-commerce, focused on modern design, visual organization, and responsiveness.
+**NoxStride** is a modern, responsive e-commerce web application focused on high-quality sportswear and sneakers. Built with clean HTML, modular CSS, and vanilla JavaScript, this project demonstrates advanced front-end skills, UI/UX design, and code organization.
 
-## About the Project
+##  Features
 
-NoxStride is a fictional project developed to simulate a real e-commerce environment. The application presents products in a structured way, with simple navigation and a layout designed for different screen sizes.
+- **Responsive Design:** Fully adaptive layout for desktop and mobile, using CSS Grid and Flexbox.
+- **Modern UI:** Clean, attractive interface with custom hero sections, product grids, and interactive cards.
+- **Product Catalog:** Dynamic product listing with filtering and search capabilities.
+- **Shopping Cart:** Add/remove products, quantity management, and persistent cart using `localStorage`.
+- **Accessible Navigation:** Keyboard-friendly navigation and semantic HTML.
+- **Custom Components:** Modular CSS for header, hero, product categories, grid, and footer.
+- **Performance:** Optimized images (AVIF, SVG), minimal dependencies, and fast load times.
 
-## Features
+##  Tech Stack
 
-* Home page with banner and highlight sections
-* Organized product grid
-* Navigation menu (Men, Women, Outlet, Our Stores, About)
-* Product page
-* Footer with information and social media
-* Responsive layout
+- **HTML5** — Semantic, SEO-friendly structure
+- **CSS3** — Modular architecture, custom variables, reset, and responsive utilities
+- **JavaScript (ES6+)** — Vanilla JS for interactivity and state management
+- **No frameworks required** — Lightweight and easy to deploy
 
 ## Project Structure
 
 ```
-E-Commerce-NoxStride/
+noxstride-ecommerce/
 │
 ├── index.html
-├── modelos.html
 ├── README.md
-│
-├── css
-│      └──├── base.css
-│         ├── reset.css
-│         ├── variables.css
-│         ├── header.css
-│         ├── hero.css
-│         ├── product-category.css
-│         ├── product-grid.css
-│         └── footer.css
-│     
-│
+├── css/
+│   ├── base.css
+│   ├── footer.css
+│   ├── header.css
+│   ├── hero.css
+│   ├── product-category.css
+│   ├── product-grid.css
+│   ├── reset.css
+│   └── variables.css
 ├── images/
 │   ├── assets/
 │   ├── banners/
 │   ├── grid/
 │   ├── icons/
 │   ├── logo/
-│   └── products/
+│   ├── products/
+│   └── vitrine/
+└── shopall/
+	├── app.js
+	├── store.html
+	└── style.css
 ```
 
-# Developer
-Gustavo Leal Mamedio
+
+## Code Highlights
+
+- **Component-based CSS:** Each section (header, hero, grid, etc.) has its own stylesheet for maintainability.
+- **Clean JavaScript:** All cart and product logic is handled with readable, well-structured functions.
+- **Accessibility:** Uses semantic tags and ARIA-friendly patterns.
+- **Performance:** Uses AVIF and SVG for images, lazy loading, and minimal external dependencies.
+
+##  What You'll Learn
+
+- How to structure a scalable front-end project
+- Advanced CSS techniques for layout and effects
+- Building a shopping cart from scratch with vanilla JS
+- Best practices for code organization and maintainability
+
+## Developed by Gustavo Leal
+
+
+
+
